@@ -1,0 +1,13 @@
+.posts {
+  background: linear-gradient(hsla(0, 12%, 20%, 0.502), hsla(120, 39%, 20%, 0.502));
+  border: 1px solid white;
+  margin: 20px 0 20px 0;
+  padding: 10px;
+}
+.posts h2 {
+  text-decoration: underline;
+  color: goldenrod;
+}
+.posts p {
+  color: hsl(240, 77%, 84%);
+}
