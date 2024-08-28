@@ -1,0 +1,90 @@
+html{
+    background-color: #f8c0c1;
+    /* 
+    pink - #f8c0c1
+    blue - #17b6f9
+    white - 
+    light grey - #c7c7c7
+    grey - #d3d3d3
+    med grey - #898989
+    dark grey - #505050
+    */
+    font-family: 'bungee tint';
+    padding: 10px;
+    border-left: 10px solid hsl(60, 60%, 93%);
+}
+a{
+    color: black;
+    border: 1px solid black;
+    padding: 0.3rem;
+    margin: 0.2rem;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+header{
+    display: flex;
+}
+#welcome-header-container{
+    width: 100%;
+    height: 50%;
+    background-image: url('/Logo.svg');
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:50%;
+}
+#welcome-header{
+    font-size: 2.8rem;
+    font-family: 'Tilt Warp';
+    color: white;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 39%;
+    left: 12vw;
+
+}
+#welcome-msg p:first-of-type{
+    font-size: 1rem;
+}
+#welcome-msg{
+    font-size: 1.2rem;
+}
+#motto h2{ 
+    font-family: 'jost black';
+    font-size: 3rem;
+    margin: 20px 10px;
+    text-align: right;
+    transform: rotate(10deg);
+    width: 20%;
+    border: 1px solid black;
+    /* outline: 2px solid white; */
+    /* position: relative; */
+    /* left: 70%; */
+}
+#main-section{
+    font-family: 'Londrina Solid';
+    color: white;
+
+    width: 70%;
+    
+    /* border: 3px solid #000; */
+    background: linear-gradient(45deg, #d3d3d3, 10%, #505050);
+}
+footer{
+    font-family: 'Candara';
+    font-weight: 600;
+}
+#credit{
+}
+#other p:first-of-type{
+    padding: 1rem 0;
+}
+#other-sites{
+    display: flex;
+}
