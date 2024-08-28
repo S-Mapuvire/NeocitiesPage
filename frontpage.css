@@ -1,5 +1,3 @@
-html{
-    background-color: #f8c0c1;
     /* 
     pink - #f8c0c1
     blue - #17b6f9
@@ -9,33 +7,42 @@ html{
     med grey - #898989
     dark grey - #505050
     */
-    font-family: 'bungee tint';
+*{
+    /* border: 1px solid black; */
+
+}
+html{
+    font-family: 'Bungee';
+    
     padding: 10px;
+    background-color: #f8c0c1;
     border-left: 10px solid hsl(60, 60%, 93%);
+    border-right: 5vw solid #17b6f9;
 }
 a{
     color: black;
-    border: 1px solid black;
-    padding: 0.3rem;
-    margin: 0.2rem;
 }
 a:visited{
     color:black;
 }
-a:hover{
-    outline: 1px solid white;
-    outline-offset: 3px;
-}
+
 header{
     display: flex;
 }
+#welcome-msg-section{
+    display: flex;
+    flex-wrap: wrap;
+}
 #welcome-header-container{
-    width: 100%;
+    width: 50%;
     height: 50%;
+
+    flex-shrink: 0;
+
     background-image: url('/Logo.svg');
-    background-position:left;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size:50%;
+    background-size: 100%;
 }
 #welcome-header{
     font-size: 2.8rem;
@@ -44,47 +51,141 @@ header{
 
     width: 100%;
     height: 100%;
+
     position: relative;
     top: 39%;
-    left: 12vw;
-
+    left: 11vw;
+}
+#welcome-msg{
+    font-size: 1.2rem;
+    
+    
 }
 #welcome-msg p:first-of-type{
     font-size: 1rem;
 }
-#welcome-msg{
-    font-size: 1.2rem;
-}
 #motto h2{ 
     font-family: 'jost black';
     font-size: 3rem;
-    margin: 20px 10px;
     text-align: right;
-    transform: rotate(10deg);
+
     width: 20%;
+    margin: 20px 10px;
     border: 1px solid black;
-    /* outline: 2px solid white; */
-    /* position: relative; */
-    /* left: 70%; */
+    
+    transform: rotate(10deg);
 }
 #main-section{
     font-family: 'Londrina Solid';
-    color: white;
+    color: black;
 
     width: 70%;
+    min-height: 20rem;
+    padding: 10px;
+
+    border: 2px solid black;
     
-    /* border: 3px solid #000; */
     background: linear-gradient(45deg, #d3d3d3, 10%, #505050);
+}
+#links-section{
+    display: flex;
+}
+.link:hover{
+   padding: 2%;
+}
+.link{
+    padding: 1%;
+    outline: 1px solid black;
+}
+.link h3{
+    margin-bottom: 10%;
 }
 footer{
     font-family: 'Candara';
     font-weight: 600;
 }
-#credit{
+footer a{
+    border: 1px solid black;
+    
+    padding: 0.3rem;
+    margin: 0.2rem;
+}
+footer a:hover{
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+footer a:active{
+    border: 2px inset black;
+    outline: none;
 }
 #other p:first-of-type{
     padding: 1rem 0;
 }
 #other-sites{
     display: flex;
+}
+#credit-logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding: 1%;
+}
+#cat{
+    width: 5%;
+}
+/* ************************************************************* */
+@media (width>1000px) {
+    html{
+    }
+    #welcome-msg-section{
+        display: flex;
+    }
+    #welcome-header-container{
+        /* position: relative; */
+        background-size: 50%;
+    }
+    #welcome-header{
+        top: 39%;
+        left: 16vw;
+    }
+    #welcome-msg{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: end;
+        flex-wrap: wrap;
+        width: 70%;
+        
+        
+    }
+    #welcome-msg p:nth-of-type(1){
+        position: relative;
+        left: 15vw;  
+        top: -20%;
+        color: white;
+    }
+    #welcome-msg p:nth-of-type(2){
+        width: 50%;
+        font-size: 1.2em;
+        text-shadow: 1px 1px #505050;
+    }
+    }
+    #welcome-msg p:nth-of-type(3){
+        position: relative;
+        left: 40%;  
+        color: white;
+    }
+    #motto h2{
+        position: relative;
+        left: 10rem;
+        width: 8%;
+    }
+    #other-sites{
+        display: flex;
+    }
+    #other-sites a{
+        margin: 0 80px;
+        padding: 10px;
+    }
+    
 }
